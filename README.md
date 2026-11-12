@@ -68,7 +68,11 @@ From building and maintaining this project I have learned some of the following:
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/devsecops-pipeline-project-1.git
 
-## Resultant reports 
+# The pipeline runs automatically on push
+# View results in the Actions tab
+\`\`\`
+
+# Resultant reports 
 
 Trivy's SLA scan: 
 <img width="1084" height="679" alt="image" src="https://github.com/user-attachments/assets/4097dc5b-5965-47c7-aabf-49a2af40fa4b" />
@@ -79,9 +83,8 @@ CodeQLs SAST report:
 
 GitLeeks Report: 
 
+<img width="615" height="177" alt="image" src="https://github.com/user-attachments/assets/03654b87-484e-4e73-bd00-4ac28e74fb77" />
 
 
-# The pipeline runs automatically on push
-# View results in the Actions tab
-\`\`\`
+
 
