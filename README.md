@@ -23,3 +23,52 @@ This repository demonstrates a Prod-ready DevOps pipeline built for **Nitro**, a
 | **Gitleaks** | Secret Detection | Pre-commit |
 | **Trivy IaC** | Infrastructure as Code Security | Build |
 
+## Architecture
+
+\`\`\`
+Developer Push --> GitHub Actions --> Security Scans --> Docker Build --> AWS Deployment
+                        |
+                        ├── SAST (CodeQL)
+                        ├── SCA (Trivy)
+                        ├── Secret Scan (Gitleaks)
+                        └── IaC Scan (Trivy)
+\`\`\`
+
+## Security Findings
+
+The main purpose of this projecet is to increase my awareness in tools such as SCAs therefore this project intentionally includes vulnerabilities:
+
+### SAST Findings (CodeQL)
+- SQL Injection in user lookup function
+- Command Injection in ping endpoint
+- Server-Side Template Injection (SSTI)
+
+### SCA Findings (Trivy)
+- CVE-2020-14343 in PyYAML 5.4.1 (Critical)
+- Multiple vulnerabilities in Flask 2.0.1
+
+### IaC Findings (Trivy)
+- S3 bucket without encryption
+- Security group with overly permissive rules
+
+## Skills Demonstrated
+
+From building and maintaining this project I have learned some of the following: 
+
+- **CI/CD**: GitHub Actions workflow design
+- **SAST**: CodeQL query configuration
+- **SCA**: Trivy vulnerability scanning
+- **Containers**: Docker security best practices
+- **IaC**: Terraform with AWS
+- **Secret Management**: Gitleaks configuration
+
+## If you wish to add upon/ use my repo ->
+
+\`\`\`bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/devsecops-pipeline-project-1.git
+
+# The pipeline runs automatically on push
+# View results in the Actions tab
+\`\`\`
+
