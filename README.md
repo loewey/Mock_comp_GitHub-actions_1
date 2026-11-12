@@ -68,6 +68,9 @@ From building and maintaining this project I have learned some of the following:
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/devsecops-pipeline-project-1.git
 
+<img width="1084" height="679" alt="image" src="https://github.com/user-attachments/assets/4097dc5b-5965-47c7-aabf-49a2af40fa4b" />
+
+
 # The pipeline runs automatically on push
 # View results in the Actions tab
 \`\`\`
